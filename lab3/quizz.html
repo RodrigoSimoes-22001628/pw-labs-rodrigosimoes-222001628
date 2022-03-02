@@ -16,20 +16,20 @@
         </figure>
     </header>
     <nav>
-        <a href="index.html">Introdução</a>|<a href="local.html"><b>Localização</b></a>|<a href="multimedia.html ">Multimédia</a>
-    |   <a href="info.html">Informações</a>|<a href="../index.html">Home</a>
+        <a href="index.html">Introdução</a>|<a href="local.html">Localização</a>|<a href="multimedia.html ">Multimédia</a>
+    |   <a href="info.html">Informações</a>|<a href="quizz.html"><b>Quizz</b></a>|<a href="../index.html">Home</a>
     </nav>
     <main>
         <h3>Quizz</h3>
         <p>Nesta página será apresentado ao utilizador um quiz sobre a ciade de Braga</p>
-        <form>
+        <form form method="POST" action="mailto: seuemail@gmail.com" enctype="multipart/form-data">
             <fieldset>
                 <legend>Quizz sobre Braga</legend>
             </fieldset>
             <fieldset title="Info">
-                <input type="text" placeholder="Insira o seu nome" name="nome">
-                <input type="text" placeholder="Insira o seu apelido" name="apelido">
-                <input type="email" placeholder="Insira o seu email" name="email">
+                <input type="text" placeholder="Insira o seu nome" name="nome" size="20" autofocus >
+                <input type="text" placeholder="Insira o seu apelido" name="apelido" size="20" autofocus>
+                <input type="email" placeholder="Insira o seu email" name="email" autofocus required>
             </fieldset>
 
             <fieldset title="Perguntas">
@@ -64,22 +64,32 @@
                 <input type="radio" name="Festa do Bacalhau" value="Festa do Bacalhau">
                 <label for="Festa do Bacalhau">Festa do Bacalhau</label><br>
 
-                <label>Como se chama o Arcebispo Primaz de Braga?</label><br>
-                <input type="checkbox" name="João Rodrigues" value="João Rodrigues">
-                <label for="João Rodrigues">João Rodrigues</label><br>
-                <input type="checkbox" name="Jorge Ortiga" value="Jorge Ortiga">
-                <label for="Jorge Ortiga">Jorge Ortiga</label><br>
-                <input type="checkbox" name="Domingos Barbosa" value="Domingos Barbosa">
-                <label for="Domingos Barbosa">Domingos Barbosa</label><br>
+                <label for="Arcebispo">Como se chama o Arcebispo Primaz de Braga?</label><br>
+                <select name="Arcebispo"multiple>
+                  <option value="João Rodrigues">João Rodrigues</option>
+                  <option value="Jorge Ortiga">Jorge Ortiga</option>
+                  <option value="Domingos Barbosa">Domingos Barbosa</option>
+                </select><br>
 
                 <label>Em que ano foi fundado o Sporting Clube de Braga?</label><br>
                 <input type="number" name="1921" value="2022" min="1900" max ="2022"><br>
 
+                <label>Quantos degraus tem o escadório do Bom Jesus?</label><br>
+                <input list="Bom Jesus" name="Bom Jesus">
+                <datalist id="Bom Jesus">
+                    <option value="5001">
+                    <option value="250">
+                    <option value="573">
+                </datalist><br>
+
                 <label>Avalia o Quizz</label><br>
-                <input type="range"name="avaliacao" min="0" max="5">
+                <input type="range"name="avaliacao" min="0" max="5" autofocus >
                 <label for="avaliacao">0-5</label><br>
 
-                <label>Apagar Respostas</label>
+                <label> Comentários</label><br>
+                <textarea name="message" rows="10" cols="60"></textarea><br>
+
+                <label>Apagar Respostas</label><br>
                 <input type="reset"><br>
 
                 <input type="image" src="images/submit.png" alt="Submit" width="48" height="48">
