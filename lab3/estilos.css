@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    font-family: 'Patrick Hand', cursive;
+}
+
+fieldset:nth-child(1){
+    background-color: paleturquoise;   
+}
+fieldset:nth-child(2){
+    background-color: grey;   
+}
+fieldset:nth-child(3){
+    background-color: white;   
+}
+
+a:link{ color: rgb(104, 11, 224)} /*link por visitar*/
+a:visited{ color: black} /*link visitado*/
+a:hover{ color: blue;} /*rato por cima*/
+a:active{ color: rgb(27, 34, 110);} /*link selecionado*/
+
+/*colocar fundo na tabela e no poema*/
+table tr:nth-child(2n),.poema{
+    background-color: rgb(3, 247, 247);
+    color: rgb(8, 0, 0);
+}
+
+/*Colocar molduras nas fotos da Multimédia*/
+figure[class ^="foto1"]{
+    background-color: brown;
+    width: 125px;
+}
+
+figure[class *="foto2"]{
+    background-color: rgb(8, 23, 243);
+    width: 125px;
+}
+
+figure[class $="foto3"]{
+    background-color: rgb(252, 136, 5);
+    width: 135px;
+}
+
+figure[class ^="foto4"]{
+    background-color: rgb(33, 253, 4);
+    width: 580px;
+}
+
+p::first-letter {
+    color: #000000;
+    font-size: xx-large;
+  }
+  
+  p::first-line {
+    color: #0202fa;
+    font-variant: small-caps;
+  }
+
+  label{
+      display: block;
+  }

@@ -7,6 +7,7 @@
     <meta name="keywords" content="Website,Braga">
     <meta name="description" content="Website sobre Braga">
     <link rel="shortcut icon" type="images/x-icon" href="images/braga.jpg"/>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body style="background-color:paleturquoise">
     <header>
@@ -16,8 +17,8 @@
         </figure>
     </header>
     <nav>
-        <a href="index.html">Introdução</a>|<a href="local.html">Localização</a>|<a href="multimedia.html ">Multimédia</a>
-    |   <a href="info.html">Informações</a>|<a href="quizz.html"><b>Quizz</b></a>|<a href="../index.html">Home</a>
+        <a href="index.html">👁️‍🗨️ Introdução</a>|<a href="local.html">🗺️ Localização</a>|<a href="multimedia.html ">📸 Multimédia</a>
+    |   <a href="info.html">📝 Informações</a>|<a href="quizz.html"><b>❔ Quizz</b></a>|<a href="html5-css.html">💻 Html-Css</a>|<a href="../index.html">🏠 Home</a>
     </nav>
     <main>
         <h3>Quizz</h3>
@@ -30,39 +31,48 @@
                 <input type="text" placeholder="Insira o seu nome" name="nome" size="20" autofocus >
                 <input type="text" placeholder="Insira o seu apelido" name="apelido" size="20" autofocus>
                 <input type="email" placeholder="Insira o seu email" name="email" autofocus required>
-            </fieldset>
+            </fieldset><br>
 
             <fieldset title="Perguntas">
                 <label>Quais são as cores da cidade ?</label><br>
                 <input type="color" name="color">
-                <input type="color" name="color"><br>
+                <input type="color" name="color">
 
                 <label>Quantos habitantes possuí o concelho?</label><br>
+                <label for="181 mil">
                 <input type="checkbox" name="181 mil" value="181 mil">
-                <label for="181 mil">181 mil</label><br>
+                181 mil</label>
+                <label for="134 mil">
                 <input type="checkbox" name="134 mil" value="134 mil">
-                <label for="134 mil">134 mil</label><br>
+                134 mil</label>
+                <label for="279 mil">
                 <input type="checkbox" name="279 mil" value="279 mil">
-                <label for="279 mil">279 mil</label><br>
+                279 mil</label><br>
 
                 <label>Como se chama o Presidente da Câmara?</label><br>
+                <label for="António Salvador">
                 <input type="radio"name="António Salvador" value="António Salvador">
-                <label for="António Salvador">António Salvador</label><br>
+                António Salvador</label>
+                <label for="Ricardo Rio">
                 <input type="radio" name="Ricardo Rio" value="Ricardo Rio">
-                <label for="Ricardo Rio">Ricardo Rio</label><br>
+                Ricardo Rio</label>
+                <label for="Francisco Machado">
                 <input type="radio" name="Francisco Machado" value="Francisco Machado">
-                <label for="Francisco Machado">Francisco Machado</label><br>
+                Francisco Machado</label><br>
 
                 <label>Em que data iniciaram as obras do Bom Jesus de Braga ?</label><br>
-                <input type="date" name=" dataObras" max="01-01-1783" min="02-02-2022"><br>
+                <input type="date" name=" dataObras" max="01-01-1783" min="02-02-2022">
 
                 <label>Como se chamam as maiores festas do concelho?</label><br>
+                <label for="São João de Braga">
                 <input type="radio"name="São João de Braga" value="São João de Braga">
-                <label for="São João de Braga">São João de Braga</label><br>
+                São João de Braga</label>
+                <label for="Noite Branca de Braga">
                 <input type="radio" name="Noite Branca de Braga" value="Noite Branca de Braga">
-                <label for="Noite Branca de Braga">Noite Branca de Braga</label><br>
+                Noite Branca de Braga</label>
+                <label for="Festa do Bacalhau">
                 <input type="radio" name="Festa do Bacalhau" value="Festa do Bacalhau">
-                <label for="Festa do Bacalhau">Festa do Bacalhau</label><br>
+                Festa do Bacalhau</label><br>
 
                 <label for="Arcebispo">Como se chama o Arcebispo Primaz de Braga?</label><br>
                 <select name="Arcebispo"multiple>
@@ -72,7 +82,7 @@
                 </select><br>
 
                 <label>Em que ano foi fundado o Sporting Clube de Braga?</label><br>
-                <input type="number" name="1921" value="2022" min="1900" max ="2022"><br>
+                <input type="number" name="1921" value="2022" min="1900" max ="2022">
 
                 <label>Quantos degraus tem o escadório do Bom Jesus?</label><br>
                 <input list="Bom Jesus" name="Bom Jesus">
@@ -82,21 +92,18 @@
                     <option value="573">
                 </datalist><br>
 
-                <label>Avalia o Quizz</label><br>
-                <input type="range"name="avaliacao" min="0" max="5" autofocus >
+                <label>Avalia o Quizz:</label><br>
+                <input type="range"name="avaliacao" min="0" max="5" autofocus>
                 <label for="avaliacao">0-5</label><br>
 
                 <label> Comentários</label><br>
                 <textarea name="message" rows="10" cols="60"></textarea><br>
 
-                <label>Apagar Respostas</label><br>
-                <input type="reset"><br>
+                <input type="reset" value="Apagar Respostas"><br>
 
                 <input type="image" src="images/submit.png" alt="Submit" width="48" height="48">
-            </fieldset>
-            
+            </fieldset><br>
         </form>
-
         <br>
         <footer>Rodrigo Simões, a22001628, Universidade Lusófona, 2º ano LEI</footer>
     </main>
