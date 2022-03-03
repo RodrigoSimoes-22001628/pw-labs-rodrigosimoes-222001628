@@ -45,15 +45,23 @@ figure[class ^="foto4"]{
     width: 580px;
 }
 
-p::first-letter {
+ .introducao::first-letter {
     color: #000000;
     font-size: xx-large;
   }
   
-  p::first-line {
+  .introducao::first-line  {
     color: #0202fa;
     font-variant: small-caps;
   }
+
+ /* figure{
+      border-style: double;
+      width: 200px;
+  }
+  figure img{
+    width: 100%;
+  } */
 
   label{
       display: block;
