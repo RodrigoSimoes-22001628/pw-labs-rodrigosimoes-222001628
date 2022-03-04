@@ -7,15 +7,19 @@ fieldset:nth-child(1){
     background-color: paleturquoise;   
 }
 fieldset:nth-child(2){
-    background-color: grey;   
+    background-color: rgb(42, 6, 248);   
 }
-fieldset:nth-child(3){
-    background-color: white;   
+.perguntas{
+    background-color: white!important;   
 }
 
 a:link{ color: rgb(104, 11, 224)} /*link por visitar*/
 a:visited{ color: black} /*link visitado*/
-a:hover{ color: blue;} /*rato por cima*/
+
+a:hover{
+    color: blue;
+   cursor: help;
+} /*rato por cima*/
 a:active{ color: rgb(27, 34, 110);} /*link selecionado*/
 
 /*colocar fundo na tabela e no poema*/
@@ -55,13 +59,13 @@ figure[class ^="foto4"]{
     font-variant: small-caps;
   }
 
- /* figure{
+  figure{
       border-style: double;
       width: 200px;
   }
   figure img{
-    width: 100%;
-  } */
+    width: auto;
+  } 
 
   label{
       display: block;
