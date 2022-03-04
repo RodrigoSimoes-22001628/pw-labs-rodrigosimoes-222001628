@@ -59,14 +59,24 @@ figure[class ^="foto4"]{
     font-variant: small-caps;
   }
 
-  figure{
+  figure img,iframe{
       border-style: double;
-      width: 200px;
+      border-color: black;
   }
-  figure img{
-    width: auto;
-  } 
 
   label{
       display: block;
+  }
+  section p{
+    background-color: white;
+  }
+
+  section > p {
+    background-color: white;
+  }
+  section  ul{
+    background-color:white;
+  }
+  section ~ ul{
+    background-color:white;
   }
