@@ -2,9 +2,9 @@
 *{
     font-family: 'Patrick Hand', cursive;
 }
-body{
+/*body{
     background: linear-gradient(#23a6d5 25.00%, #23d5ab 75.00%);
-}
+} */
 
 fieldset:nth-child(1){
     background-color: paleturquoise;   
