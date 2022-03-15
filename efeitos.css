@@ -5,9 +5,8 @@ html{
 footer{
     background: white;
     height: auto;
-    width: 350px;
-    padding-top: 40px;
+    width: 300px;
+    padding: 20px;
     border-color: rgb(0, 10, 66);
     border-style: solid;
-    margin: 10px;
 }
