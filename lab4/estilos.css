@@ -2,9 +2,11 @@
         *{
             font-family: 'Patrick Hand', cursive;
         }
+
         *{
             box-sizing: border-box;
         }
+
         .capitais{
             display: flex;
             flex-flow: row wrap;
@@ -43,15 +45,17 @@
             align-items: center;
             font-size: 2rem;
             color:white;
-            padding: 50px 0;
+            padding: 50px;
             background-image: url("../lab4/imagens/fundo.jpg");
             background-size: cover;
         }
-        .links{
-            display: flex;
-        }
+
         .menu a:last-child{
             margin-left: auto;
+        }
+
+        menu{
+            display: flex;
         }
 
         a{
@@ -59,7 +63,94 @@
             text-decoration: none;
             color: black;
         }
+
         a:hover{
             color: #888888;
             font-weight: bold
+        }
+
+        .dicas div{
+            display: flex;
+            justify-content:space-between;
+            width: 300;
+            height: 300;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: rgb(238, 248, 248);
+            margin: 10px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+
+        .destinos{
+            background-color: rgb(238, 248, 248);
+            padding: 10px;
+            color: white;
+            font-family:'Signika', sans-serif;
+        }
+
+        .algarve{
+            background-image: url("../lab4/imagens/algarve.webp");
+            grid-area: algarve;
+        }
+
+        .alentejo{
+            background-image: url("../lab4/imagens/alentejo.webp");
+            grid-area: alentejo;
+        }
+
+        .porto{
+            background-image: url("../lab4/imagens/Porto.jpg");
+            grid-area: porto;
+        }
+
+        .lisboa{
+            background-image: url("../lab4/imagens/lisboa2.jpg");
+            grid-area: lisboa;
+        }
+
+        .acores{
+            background-image: url("../lab4/imagens/acores.webp");
+            grid-area: acores;
+        }
+
+        .campismo{
+            background-image: url("../lab4/imagens/campismo.jpg");
+            grid-area: campismo;
+        }
+
+        @media(min-width : 901px){
+            body{
+                gap: 20px;
+                grid-template-areas:
+                'algarve alentejo porto campismo'
+                'acores lisboa campismo'
+            }
+        }
+
+        @media(max-width : 900px){
+            body{
+                gap: 20px;
+                grid-template-areas:
+                'algarve alentejo'
+                'porto lisboa'
+                'acores'
+                'campismo'
+            }
+        }
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+
+        }
+        .absolute{
+            position: absolute;
+        }
+
+        .paragrafo,.botao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
