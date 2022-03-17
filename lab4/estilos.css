@@ -91,7 +91,7 @@
             background-color: rgb(238, 248, 248);
             padding: 10px;
             color: white;
-            font-family: 'Patrick Hand', cursive;
+           font-family: 'Patrick Hand', cursive;
         }
 
         .algarve{
@@ -157,7 +157,7 @@
 
         .destinos div h3{
             margin: 10px;
-            bottom: 50px;
+            bottom: 30px;
         }
 
         .destinos div p{
