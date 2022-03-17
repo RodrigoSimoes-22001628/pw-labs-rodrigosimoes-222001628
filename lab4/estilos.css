@@ -39,23 +39,11 @@
             align-items: center;
         }
         
-        .cabecalho{
+        .menu{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            color:white;
-            padding: 50px;
-            background-image: url("../lab4/imagens/fundo.jpg");
-            background-size: cover;
         }
-
         .menu a:last-child{
             margin-left: auto;
-        }
-
-        menu{
-            display: flex;
         }
 
         a{
@@ -69,20 +57,38 @@
             font-weight: bold
         }
 
-        .dicas div{
+        .cabecalho{
             display: flex;
-            justify-content:space-between;
-            width: 300;
-            height: 300;
-            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color:white;
+            padding: 50px;
+            background-image: url("../lab4/imagens/fundo.jpg");
+            background-size: cover;
+        }
+
+        .dicas div{
+            width: auto;
+            height: auto;
+            border-radius: 20px 20px 20px 20px;
             padding: 10px 20px;
-            background-color: rgb(238, 248, 248);
+            background-color: white;
             margin: 10px;
+            justify-content: space-between;
+            box-shadow: 5px 5px 15px #888888;
+        }
+
+        .dicas{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(238, 248, 248);
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
 
         .destinos{
+            display: grid;
             background-color: rgb(238, 248, 248);
             padding: 10px;
             color: white;
@@ -90,13 +96,13 @@
         }
 
         .algarve{
-            background-image: url("../lab4/imagens/algarve.webp");
+            background-image: url("../lab4/imagens/algarve.png");
             grid-area: algarve;
         }
 
-        .alentejo{
-            background-image: url("../lab4/imagens/alentejo.webp");
-            grid-area: alentejo;
+        .madeira{
+            background-image: url("../lab4/imagens/madeira.jpg");
+            grid-area: madeira;
         }
 
         .porto{
@@ -105,12 +111,12 @@
         }
 
         .lisboa{
-            background-image: url("../lab4/imagens/lisboa2.jpg");
+            background-image: url("../lab4/imagens/lisboa.jpg");
             grid-area: lisboa;
         }
 
         .acores{
-            background-image: url("../lab4/imagens/acores.webp");
+            background-image: url("../lab4/imagens/acores.png");
             grid-area: acores;
         }
 
@@ -123,8 +129,8 @@
             body{
                 gap: 20px;
                 grid-template-areas:
-                'algarve alentejo porto campismo'
-                'acores lisboa campismo'
+                'algarve madeira porto campismo'
+                'acores acores lisboa campismo'
             }
         }
 
@@ -132,7 +138,7 @@
             body{
                 gap: 20px;
                 grid-template-areas:
-                'algarve alentejo'
+                'algarve madeira'
                 'porto lisboa'
                 'acores'
                 'campismo'
@@ -143,7 +149,6 @@
         }
         .relative{
             position: relative;
-
         }
         .absolute{
             position: absolute;

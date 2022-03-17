@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+ }
 html{
     background-color:#04c4ff;
+}
+
+h1{
+    text-align: left;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    text-transform:capitalize;
+}
+
+.menu{
+    word-spacing: 3px;
+    font-size: medium;
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
 }
 
 footer{
