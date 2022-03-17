@@ -85,14 +85,13 @@
             background-color: rgb(238, 248, 248);
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
         .destinos{
             display: grid;
             background-color: rgb(238, 248, 248);
             padding: 10px;
             color: white;
-            font-family:'Signika', sans-serif;
+            font-family: 'Patrick Hand', cursive;
         }
 
         .algarve{
@@ -121,12 +120,13 @@
         }
 
         .campismo{
-            background-image: url("../lab4/imagens/campismo.jpg");
             grid-area: campismo;
+            background-color: white;
+            color: black;
         }
 
         @media(min-width : 901px){
-            body{
+            .destinos{
                 gap: 20px;
                 grid-template-areas:
                 'algarve madeira porto campismo'
@@ -135,7 +135,7 @@
         }
 
         @media(max-width : 900px){
-            body{
+            .destinos{
                 gap: 20px;
                 grid-template-areas:
                 'algarve madeira'
@@ -149,12 +149,23 @@
         }
         .relative{
             position: relative;
+
         }
         .absolute{
             position: absolute;
         }
 
-        .paragrafo,.botao{
+        .destinos div h3{
+            margin: 10px;
+            bottom: 50px;
+        }
+
+        .destinos div p{
+            margin: 10px;
+            bottom:0;
+        }
+
+        .paragrafo,.botao,.tenda{
             display: flex;
             justify-content: center;
             align-items: center;

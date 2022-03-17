@@ -2,7 +2,7 @@
 *{
     font-family: 'Righteous', cursive;
  }
-html{
+body{
     background-color:#04c4ff;
 }
 
@@ -30,4 +30,27 @@ footer{
     padding: 20px;
     border-color: rgb(0, 10, 66);
     border-style: solid;
+}
+
+@media(max-width:600px){ /*telemóvel */
+    .worldcloud{
+        display: grid;
+        grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer';
+
+    }
+}
+
+@media(max-width:600px){ /* PC */
+    .worldcloud{
+        display: grid;
+        grid-template-areas:
+        'header header header'
+        'menu main aside'
+        'footer footer footer';
+    }
 }
