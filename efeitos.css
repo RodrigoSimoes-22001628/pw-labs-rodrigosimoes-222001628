@@ -3,11 +3,7 @@
     font-family: 'Patrick Hand', cursive;
 }
 body{
-    
     background-color: rgb(144, 241, 241);
-}
-header{
-    grid-area: header;
 }
 
 h1,h2{
@@ -17,9 +13,6 @@ h1,h2{
     text-transform:uppercase;
 }
 
-nav{
-    grid-area: nav;
-}
 .menu{
     word-spacing: 3px;
     font-size:large;
@@ -38,7 +31,6 @@ a{
 }
 
 footer{
-    grid-area: footer;
     background: white;
     height: auto;
     width: 300px;
@@ -50,28 +42,28 @@ footer{
 .nome{
     text-align: center;
 }
+
 aside{
     grid-area: aside;
 }
 
-@media(max-width:600px){ /*telemóvel */
-    .worldcloud{
+nav{
+    grid-area: nav;
+}
+
+@media(min-width:601px){
+    .conteudos{
         display: grid;
         grid-template-areas:
-        'header'
+        'nav aside'
+    }
+}
+
+@media(max-width:600px){ 
+    .conteudos{
+        display: grid;
+        grid-template-areas:
         'nav'
         'aside'
-        'footer';
-
     }
-}
-
-@media(min-width:601px){ /* PC */
-    .worldcloud{
-        display: grid;
-        grid-template-areas:
-        'header header'
-        'nav aside'
-        'footer footer';
-    }
-}
+} 

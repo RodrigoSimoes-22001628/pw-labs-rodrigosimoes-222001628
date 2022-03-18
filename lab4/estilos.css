@@ -136,7 +136,7 @@
                 gap: 20px;
                 grid-template-areas:
                 'algarve madeira porto campismo'
-                'acores acores lisboa campismo'
+                'acores acores lisboa campismo';
             }
         }
 
@@ -147,7 +147,7 @@
                 'algarve madeira'
                 'porto lisboa'
                 'acores acores'
-                'campismo campismo'
+                'campismo campismo';
             }
             .destinos > div{
                 min-height: 500px;
@@ -166,11 +166,11 @@
             position: absolute;
         }
 
-        .destinos div h3{
+         div h3{
             margin: 10px;
             bottom: 50px;
         }
-
+        
         .destinos div p{
             margin: 10px;
             bottom:0;
