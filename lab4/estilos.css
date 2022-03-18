@@ -149,6 +149,10 @@
                 'acores acores'
                 'campismo campismo'
             }
+            .destinos > div{
+                min-height: 500px;
+            }
+
         }
 
         .static{
