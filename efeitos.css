@@ -3,7 +3,11 @@
     font-family: 'Patrick Hand', cursive;
 }
 body{
+    
     background-color: rgb(144, 241, 241);
+}
+header{
+    grid-area: header;
 }
 
 h1,h2{
@@ -13,6 +17,9 @@ h1,h2{
     text-transform:uppercase;
 }
 
+nav{
+    grid-area: nav;
+}
 .menu{
     word-spacing: 3px;
     font-size:large;
@@ -31,6 +38,7 @@ a{
 }
 
 footer{
+    grid-area: footer;
     background: white;
     height: auto;
     width: 300px;
@@ -42,13 +50,16 @@ footer{
 .nome{
     text-align: center;
 }
+aside{
+    grid-area: aside;
+}
 
 @media(max-width:600px){ /*telemóvel */
     .worldcloud{
         display: grid;
         grid-template-areas:
         'header'
-        'menu'
+        'nav'
         'aside'
         'footer';
 
@@ -59,8 +70,8 @@ footer{
     .worldcloud{
         display: grid;
         grid-template-areas:
-        'header header header'
-        'menu menu aside'
-        'footer footer footer';
+        'header header'
+        'nav aside'
+        'footer footer';
     }
 }

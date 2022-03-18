@@ -96,31 +96,37 @@
 
         .algarve{
             background-image: url("../lab4/imagens/algarve.png");
+            background-size: cover;
             grid-area: algarve;
         }
 
         .madeira{
             background-image: url("../lab4/imagens/madeira.jpg");
+            background-size: cover;
             grid-area: madeira;
         }
 
         .porto{
             background-image: url("../lab4/imagens/Porto.jpg");
+            background-size: cover;
             grid-area: porto;
         }
 
         .lisboa{
             background-image: url("../lab4/imagens/lisboa.jpg");
+            background-size: cover;
             grid-area: lisboa;
         }
 
         .acores{
             background-image: url("../lab4/imagens/acores.png");
+            background-size: cover;
             grid-area: acores;
         }
 
         .campismo{
             grid-area: campismo;
+            background-size: cover;
             background-color: white;
             color: black;
         }
@@ -169,4 +175,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .paragrafo{
+            text-align: justify;
         }
