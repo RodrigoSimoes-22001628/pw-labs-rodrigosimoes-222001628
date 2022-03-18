@@ -92,7 +92,6 @@
             padding: 10px;
             color: white;
             font-family: 'League Gothic', sans-serif;
-            font-weight: 400;
         }
 
         .algarve{
@@ -147,10 +146,11 @@
                 grid-template-areas:
                 'algarve madeira'
                 'porto lisboa'
-                'acores'
-                'campismo'
+                'acores acores'
+                'campismo campismo'
             }
         }
+
         .static{
             position: static;
         }
