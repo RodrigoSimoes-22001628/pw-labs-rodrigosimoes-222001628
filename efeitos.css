@@ -67,11 +67,11 @@ nav{
     }
 }
 
- /*@media(max-width:600px){ 
+@media(max-width:600px){ 
     .conteudos{
         display: grid;
         grid-template-areas:
         'nav'
         'aside'
     }
-} */
+} 
