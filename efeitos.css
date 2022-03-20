@@ -34,6 +34,7 @@ a{
     box-shadow: 5px 5px 15px #888888;
 }
 footer{
+    border-radius: 10px;
     background: white;
     height: 360px;
     width: 300px;
@@ -41,7 +42,6 @@ footer{
     border-color: rgb(0, 10, 66);
     border-style: solid;
     margin: auto;
-    border-radius: 10px;
 }
 .nome{
     text-align: center;
