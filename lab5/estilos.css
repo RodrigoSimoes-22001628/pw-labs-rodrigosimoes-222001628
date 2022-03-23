@@ -47,6 +47,7 @@
             position: fixed;
             background-color:  rgb(238, 248, 248);
             width: 100%;
+            z-index: 2;
         }
         .menu a:last-child{
             margin-left: auto;
@@ -207,6 +208,7 @@
         .parallax {
             background-image: url("../lab5/imagens/parallax.jpg");
             min-height: 600px; 
+            max-width: 100%;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -215,9 +217,199 @@
 
         .parallax2{
             background-image: url("../lab5/imagens/parallax2.jpg");
+            max-width: 100%;
             min-height: 600px; 
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            margin-bottom: 30px;
+        }
+
+        .fotos{
+            display: grid;
+            margin: 0 10vw;
+            margin-bottom: 100px;
+        }
+
+        .fotos > div{
+            position: relative;
+        }
+
+        .fotos > div p{
+            position: absolute;
+            bottom: 0;
+            visibility: hidden;
+        }
+
+        .fotos div:hover p{
+            animation-duration: 3s;
+            visibility: visible;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .fotos div:hover{
+            opacity: 0.5;
+        }
+
+        .foto1{
+            grid-area: foto1;
+        }
+        .foto2{
+            grid-area: foto2;
+        }
+        .foto3{
+            grid-area: foto3;
+        }
+        .foto4{
+            grid-area: foto4;
+        }
+        .foto5{
+            grid-area: foto5;
+        }
+        .foto6{
+            grid-area: foto6;
+        }
+        .foto7{
+            grid-area: foto7;
+        }
+        .foto8{
+            grid-area: foto8;
+        }
+        .foto9{
+            grid-area: foto9;
+        }
+        .foto10{
+            grid-area: foto10;
+        }
+        .foto11{
+            grid-area: foto11;
+        }
+        .foto12{
+            grid-area: foto12;
+        }
+
+        
+        @media(min-width : 901px){
+            .fotos {
+                grid-template-areas:
+                'foto1 foto2  foto3'
+                'foto4 foto5  foto6'
+                'foto7 foto8  foto9'
+                'foto10 foto11  foto12';
+              }
+        }
+
+        @media(max-width : 900px){
+            .fotos{
+                grid-template-areas:
+                'foto1 foto2'
+                'foto3 foto4'
+                'foto5 foto6'
+                'foto7 foto8'
+                'foto9 foto10'
+                'foto11 foto12';
+            }
+        }
+
+        @media(max-width : 600px){
+            .fotos {
+                grid-template-areas:
+                'foto1' 
+                'foto2'
+                'foto3' 
+                'foto4'
+                'foto5' 
+                'foto6'
+                'foto7' 
+                'foto8'
+                'foto9' 
+                'foto10'
+                'foto11' 
+                'foto12';
+              }
+        }
+        
+        .animacoes{
+            display: grid;
+            margin: 0 25vw;
+        }
+
+        @keyframes roda {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
+        @keyframes roda-encolhe {
+            0% {transform: rotate(0deg); width: 200px;}
+            50% {transform: rotate(180deg);  width: 100px;}
+            100% {transform: rotate(360deg);  width: 200px;}
+        }
+
+        @keyframes gira {
+            from {transform: rotate(360deg);}
+            to {transform: rotate(0deg);}
+        }
+
+        @keyframes gira-encolhe {
+            0% {transform: rotate(0deg); width: 200px;}
+            50% {transform: rotate(180deg);  width: 100px;}
+            100% {transform: rotate(360deg);  width: 200px;}
+        }
+
+        @keyframes moverLado {
+            from {width: 300px}
+            to {width:400px}
+        }
+
+        @keyframes moverAltura {
+            from {height : 200px}
+            to {height: 250px}
+        }
+
+        .animacao1 img {
+            grid-area: animacao1;
+            border-radius: 50%;  
+            animation-name: roda;  
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+        }
+        .animacao2 img{
+            grid-area: animacao2; 
+            animation-name: gira;  
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+        }
+        .animacao3 img {
+            grid-area: animacao3;
+            animation-name: moverLado;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .animacao4 img{
+            grid-area: animacao4;
+            animation-name: moverAltura;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @media(min-width : 901px){
+            .animacoes{
+                gap: 80px;
+                grid-template-areas:
+                'animacao1 animacao2'
+                'animacao3 animacao4';
+            }
+        }
+
+        @media(max-width : 900px){
+            .animacoes{
+                gap: 40px;
+                grid-template-areas:
+                'animacao1 animacao2'
+                'animacao3 animacao4';
+            }
         }
