@@ -1,0 +1,223 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+        *{
+            box-sizing: border-box;
+            font-family: 'Patrick Hand', cursive;
+        }
+        body{
+            margin: 0;
+        }
+
+        .capitais{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: space-around;
+            background-color: rgb(238, 248, 248);
+            padding: 50px;
+        }
+
+        .capitais > div{
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #888888;
+            margin: 10px;
+        }
+
+        .capitais img{
+            border-radius: 20px 0 0 20px;
+            height: 100%;
+        }
+
+        .capitais div div:last-child{
+            width: 150px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .menu{
+            display: flex;
+            position: fixed;
+            background-color:  rgb(238, 248, 248);
+            width: 100%;
+        }
+        .menu a:last-child{
+            margin-left: auto;
+        }
+
+        a{
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: #888888;
+            font-weight: bold
+        }
+
+        .cabecalho{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color:white;
+            padding: 50px;
+            background-image: url("../lab5/imagens/cabecalho.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 90vh;
+        }
+
+        .dicas div{
+            width: auto;
+            height: auto;
+            border-radius: 20px 20px 20px 20px;
+            padding: 10px 20px;
+            background-color: white;
+            margin: 10px;
+            justify-content: space-between;
+            box-shadow: 5px 5px 15px #888888;
+        }
+
+        .dicas{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(238, 248, 248);
+        }
+
+
+        .destinos{
+            display: grid;
+            background-color: rgb(238, 248, 248);
+            padding: 10px;
+            color: white;
+            font-family: 'League Gothic', sans-serif;
+        }
+
+        .algarve{
+            background-image: url("../lab4/imagens/algarve.png");
+            background-size: cover;
+            grid-area: algarve;
+        }
+
+        .madeira{
+            background-image: url("../lab4/imagens/madeira.jpg");
+            background-size: cover;
+            grid-area: madeira;
+        }
+
+        .porto{
+            background-image: url("../lab4/imagens/Porto.jpg");
+            background-size: cover;
+            grid-area: porto;
+        }
+
+        .lisboa{
+            background-image: url("../lab4/imagens/lisboa.jpg");
+            background-size: cover;
+            grid-area: lisboa;
+        }
+
+        .acores{
+            background-image: url("../lab4/imagens/acores.png");
+            background-size: cover;
+            grid-area: acores;
+        }
+
+        .campismo{
+            grid-area: campismo;
+            background-size: cover;
+            background-color: white;
+            color: black;
+        }
+
+        @media(min-width : 901px){
+            .destinos{
+                gap: 20px;
+                grid-template-areas:
+                'algarve madeira porto campismo'
+                'acores acores lisboa campismo';
+            }
+        }
+
+        @media(max-width : 900px){
+            .destinos{
+                gap: 20px;
+                grid-template-areas:
+                'algarve madeira'
+                'porto lisboa'
+                'acores acores'
+                'campismo campismo';
+            }
+            .destinos > div{
+                min-height: 500px;
+                background-size: cover;
+            }
+        }
+
+        .static{
+            position: static;
+        }
+        .relative{
+            position: relative;
+
+        }
+        .absolute{
+            position: absolute;
+        }
+
+         div h3{
+            margin: 10px;
+            bottom: 50px;
+        }
+        
+        .destinos div p{
+            margin: 10px;
+            bottom:0;
+        }
+
+        .paragrafo,.botao,.tenda{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .paragrafo{
+            text-align: justify;
+        }
+
+        .hero{
+            display: grid;
+            grid-template-rows: 10% 1fr;
+            grid-template-columns: 1fr;
+            height: 100%;
+            top: 0;
+        }
+
+        .parallax {
+            background-image: url("../lab5/imagens/parallax.jpg");
+            min-height: 600px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax2{
+            background-image: url("../lab5/imagens/parallax2.jpg");
+            min-height: 600px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
