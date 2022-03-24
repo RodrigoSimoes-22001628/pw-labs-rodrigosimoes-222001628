@@ -418,5 +418,6 @@
         @media(max-width : 900px){
             .parallax, .parallax2 , .cabecalho{
                 background-size: cover;
+                max-width: 100%;
             }
         }
