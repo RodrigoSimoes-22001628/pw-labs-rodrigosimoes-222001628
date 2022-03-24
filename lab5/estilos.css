@@ -334,6 +334,7 @@
         .animacoes{
             display: grid;
             margin: 0 25vw;
+            padding-bottom: 50px;
         }
 
         @keyframes roda {
@@ -411,5 +412,11 @@
                 grid-template-areas:
                 'animacao1 animacao2'
                 'animacao3 animacao4';
+            }
+        }
+
+        @media(max-width : 900px){
+            .parallax, .parallax2 , .cabecalho{
+                background-size: cover;
             }
         }

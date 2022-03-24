@@ -12,7 +12,21 @@ h1,h2{
     font-weight: bolder;
     text-transform:uppercase;
 }
-
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:white;
+    padding: 50px;
+    background-image: url("../lab5/imagens/cabecalho.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+}
 .menu{
     box-shadow: 5px 5px 15px #888888;
     word-spacing: 3px;
