@@ -12,6 +12,17 @@ h1,h2{
     font-weight: bolder;
     text-transform:uppercase;
 }
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 50px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(144, 241, 241);
+}
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -20,12 +31,27 @@ h1,h2{
     font-size: 2rem;
     color:white;
     padding: 50px;
-    background-image: url("../lab5/imagens/cabecalho.jpg");
+    background-image: url("../lab5/imagens/cabecalho.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 90vh;
+    margin-bottom: 50px;
+}
+
+.botao{
+    background-color: white;
+    border-color:black;
+    border-style: solid; 
+    padding: 15px;
+}
+
+.botao:hover {
+    animation-duration: 3s;
+    visibility: visible;
+    background-color: white;
+    border-radius: 8px;
 }
 .menu{
     box-shadow: 5px 5px 15px #888888;
@@ -38,6 +64,15 @@ h1,h2{
     padding: 25px;
     border-color: rgb(0, 10, 66);
     border-style: solid;
+}
+.repositorios{ 
+    margin-left: 20px;
+    background: white;
+    padding: 25px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 200px;
+    height:130px;
 }
 
 a{
@@ -71,6 +106,14 @@ nav{
 
 .wordcloud{
     box-shadow: 5px 5px 15px #888888;
+    animation-name: moverLado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverLado {
+    from {width: 300px}
+    to {width:400px}
 }
 
 @media(min-width:601px){

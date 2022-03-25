@@ -153,6 +153,9 @@
         }
 
         @media(max-width : 900px){
+            .cabecalho, .parallax , .parallax2{
+                max-width: 200px;
+            }
             .destinos{
                 gap: 20px;
                 grid-template-areas:
