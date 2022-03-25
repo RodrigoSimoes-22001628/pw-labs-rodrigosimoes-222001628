@@ -66,13 +66,7 @@ header{
     border-style: solid;
 }
 .repositorios{ 
-    margin-left: 20px;
-    background: white;
     padding: 25px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    width: 200px;
-    height:130px;
 }
 
 a{
