@@ -128,7 +128,7 @@ nav{
         'aside'
     }
     .hero{
-        max-width: 100%;
+        height: auto;
     }
 } 
 
