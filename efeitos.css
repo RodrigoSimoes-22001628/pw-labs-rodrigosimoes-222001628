@@ -38,6 +38,7 @@ header{
     background-attachment: fixed;
     height: 90vh;
     margin-bottom: 50px;
+    max-width: 100%;
 }
 
 .botao{
@@ -85,6 +86,7 @@ footer{
     border-color: rgb(0, 10, 66);
     border-style: solid;
     margin: auto;
+    margin-bottom: 50px;
 }
 .nome{
     text-align: center;
@@ -125,4 +127,19 @@ nav{
         'nav'
         'aside'
     }
+    .hero{
+        max-width: 100%;
+    }
 } 
+
+.rodape{
+    height: 8vh;
+    background: white;
+    color:black;
+}
+
+.rodape p{
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+}
