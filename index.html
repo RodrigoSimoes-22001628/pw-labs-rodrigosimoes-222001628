@@ -12,14 +12,33 @@
 <body>
     <header>
         <h1 class="titulo"> <i class="fa fa-graduation-cap"></i> Programação Web: Laboratórios</h1>
-        <a class = "botao" href="#conteudos">Laboratórios</a>
+        <a class = "botao" href="#button">Laboratórios</a>
     </header>
 
     <div class="hero" >
+    <video autoplay muted loop id="video">
+        <source src="lab5/imagens/video.mp4" type="video/mp4">
+    </video>
         <h3>Programação Web</h3>
-        <p id= "conteudos">Laboratórios Semanais</p>
-        
+        <p>Laboratórios Semanais</p>
+        <button id="button" onclick="myFunction()">Pause</button> 
     </div>
+
+    <script>
+        var video = document.getElementById("video");
+        var btn = document.getElementById("button");
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+    </script>
+
         <div class="conteudos">
         <nav>
             <ul class= "menu" type="square">
