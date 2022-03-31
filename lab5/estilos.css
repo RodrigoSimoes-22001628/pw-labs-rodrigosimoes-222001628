@@ -49,6 +49,7 @@
             width: 100%;
             z-index: 2;
         }
+        
         .menu a:last-child{
             margin-left: auto;
         }
