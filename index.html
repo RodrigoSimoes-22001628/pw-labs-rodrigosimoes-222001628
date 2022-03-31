@@ -22,7 +22,7 @@
         <div class="texto">
             <h3>Programação Web</h3>
             <p>Laboratórios Semanais</p>
-            <button id="button" onclick="myFunction()">Pause</button> 
+            <button id="button" onclick="myFunction()">Play</button> 
         </div>
     </div>
     
@@ -33,10 +33,10 @@
         function myFunction() {
           if (video.paused) {
             video.play();
-            btn.innerHTML = "Pause";
+            btn.innerHTML = "Play";
           } else {
             video.pause();
-            btn.innerHTML = "Play";
+            btn.innerHTML = "Pause";
           }
         }
     </script>

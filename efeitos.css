@@ -17,22 +17,22 @@ header{
     justify-content:space-between;
     align-items: center;
     margin-right: 50px;
-    position: sticky;
     width: 100%;
-    top: 0;
     background-color: rgb(144, 241, 241);
+    position: fixed;
+    z-index: 1;
+    top : 0;
 }
 
 video {
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
   }
 
 .hero{
+    margin-top: 100px;
     border: 2px solid #000;
     height: 90vh;
     position: relative;
@@ -42,6 +42,7 @@ video {
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    background-attachment: fixed;
   }
 
   .texto{
@@ -55,8 +56,9 @@ video {
     width: 200px;
     font-size: 18px;
     padding: 10px;
-    border: none;
+    border-color: #000;
     background: #000;
+    border-radius: 8px;
     color: #fff;
     cursor: pointer;
   }
@@ -72,6 +74,7 @@ video {
     border-color:black;
     border-style: solid; 
     padding: 15px;
+    margin-right: 50px;
 }
 
 .botao:hover {
